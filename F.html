@@ -22,13 +22,13 @@
         <header>
             <!-- place navbar here -->
         </header>
-        <main>
+        <main style="background-color: aquamarine;">
 
-            <H1>POLLUX</H1>
+           <center> <H1>POLLUX</H1> </center>
             <center>
             <div>
-                <div id="carouselId" class="carousel slide" data-bs-ride="carousel" style="width: 1000px;">
-                    <ol class="carousel-indicators">
+                <div id="carouselId" class="carousel slide" data-bs-ride="carousel" style="width: 1000px ; max-height: fit-content;">
+                    <!-- <ol class="carousel-indicators" style="padding-bottom: 20%;">
                         <li
                             data-bs-target="#carouselId"
                             data-bs-slide-to="0"
@@ -46,7 +46,7 @@
                             data-bs-slide-to="2"
                             aria-label="Third slide"
                         ></li>
-                    </ol>
+                    </ol> -->
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <img
@@ -96,7 +96,7 @@
                 
                    <center>
                     <span>
-                        <form method="post">
+                        <form method="post" style="padding: 50px; max-width: fit-content;" >
                             <!-- <div class="form-row">
                               <div class="form-group col-md-6">
                                 <label for="inputEmail4">Email</label>
@@ -158,15 +158,37 @@
                                             <td><input type="text"></td>
                                         </tr>
                                     </tbody>
+                                    <tbody>
+                                        <tr class="">
+                                            <td scope="row">Load</td>
+                                            <td><input type="number"></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">Initial Date</td>
+                                            <td><input type="date"></td>
+                                        </tr>
+
+                                        <tr class="">
+                                            <td scope="row">Desination Date</td>
+                                            <td><input type="date"></td>
+                                        </tr>
+                                    </tbody>
                                     
                                 </table>
                             </div>
-                            <div><button type="submit"> submit </button>    </div>
-                            
-                          </form>
+                            <div>
+                                <button type="submit">Submit</button>
+                                <button type="reset"> Reset </button>
+                            </div>
+                        </form>
+
                     </span>
                    </center>
                 
+            </div>
+            <div>
+
+
             </div>
         </main>
         <footer>
