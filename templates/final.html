@@ -1,0 +1,21 @@
+<!-- !DOCTYPE html>
+<html>
+<head>
+    <title>Weather and News Sentiment Analysis</title>
+</head>
+<body>
+    <h1>Weather and News Sentiment Analysis</h1>
+    
+    <form action="/" method="post">
+        Latitude: <input type="text" name="latitude"><br>
+        Longitude: <input type="text" name="longitude"><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <h2>Weather Data:</h2>
+    <pre>{{ weather_data|tojson }}</pre>
+    
+    <h2>News Sentiment:</h2>
+    <p>Sentiment Level: {{ sentiment_data }}</p>
+</body>
+</html> -->
