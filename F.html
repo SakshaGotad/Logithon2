@@ -97,14 +97,15 @@
                 
             </div>
         </center>
+        <div>&nbsp;</div>
             <div class="ipform">
                 
-                   <center>
-                    <span>
-                        <form method="post" style="padding: 50px; max-width: fit-content;" >
+                   <center >
+                    <span >
+                        
 
                             <div
-                                class="table-responsive-md"
+                                class="table-responsive-md" style="width: fit-content;"
                             >
                                 <table
                                     class="table table-primary"
@@ -133,6 +134,11 @@
                                             <td scope="row">Desination Date</td>
                                             <td><input type="date" id="destdate"></td>
                                         </tr>
+
+                                        <tr class="">
+                                            <td scope="row">Distance</td>
+                                            <td><input type="number" id="dist"></td>
+                                        </tr>
                                     </tbody>
                                     
                                 </table>
@@ -140,10 +146,15 @@
                             <div>
                                 <button type="submit" onclick="calculate()">Submit</button>
                                 <button type="reset"> Reset </button>
+                               
                             </div>
-                        </form>
-
+                           
+                         <div> &nbsp</div>
+                        <div style="width: fit-content; padding: 10px; background-color: chartreuse;">
+                            <p id="result">Power Consumption: <span id="power"></span> Watts</p>
+                        </div>
                     </span>
+                    <div> &nbsp</div>
                    </center>
                 
             </div>
