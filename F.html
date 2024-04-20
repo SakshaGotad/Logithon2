@@ -43,50 +43,15 @@
                   <li class="nav-item">
                     <a class="nav-link" href="news.html">News</a>
                   </li>
-                  <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li> -->
-                  <!-- <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li> -->
                 </ul>
-                <!-- <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> -->
+               
               </div>
             </div>
           </nav>
          <center>
             <div>
                 <div id="carouselId" class="carousel slide" data-bs-ride="carousel" style="max-width: 1000px; max-height: fit-content;">
-                    <!-- <ol class="carousel-indicators" style="padding-bottom: 20%;">
-                        <li
-                            data-bs-target="#carouselId"
-                            data-bs-slide-to="0"
-                            class="active"
-                            aria-current="true"
-                            aria-label="First slide"
-                        ></li>
-                        <li
-                            data-bs-target="#carouselId"
-                            data-bs-slide-to="1"
-                            aria-label="Second slide"
-                        ></li>
-                        <li
-                            data-bs-target="#carouselId"
-                            data-bs-slide-to="2"
-                            aria-label="Third slide"
-                        ></li>
-                    </ol> -->
+                    
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <img
@@ -147,33 +112,33 @@
                                     <tbody>
                                         <tr class="">
                                             <td scope="row">Source</td>
-                                            <td><input type="text"></td>
+                                            <td><input type="text" id="source"></td>
                                         </tr>
                                         <tr class="">
                                             <td scope="row">Destination</td>
-                                            <td><input type="text"></td>
+                                            <td><input type="text" id="desti"></td>
                                         </tr>
                                     </tbody>
                                     <tbody>
                                         <tr class="">
                                             <td scope="row">Load</td>
-                                            <td><input type="number"></td>
+                                            <td><input type="number" id="load"></td>
                                         </tr>
                                         <tr class="">
                                             <td scope="row">Initial Date</td>
-                                            <td><input type="date"></td>
+                                            <td><input type="date" id="initdate"></td>
                                         </tr>
 
                                         <tr class="">
                                             <td scope="row">Desination Date</td>
-                                            <td><input type="date"></td>
+                                            <td><input type="date" id="destdate"></td>
                                         </tr>
                                     </tbody>
                                     
                                 </table>
                             </div>
                             <div>
-                                <button type="submit">Submit</button>
+                                <button type="submit" onclick="calculate()">Submit</button>
                                 <button type="reset"> Reset </button>
                             </div>
                         </form>
@@ -186,6 +151,18 @@
 
 
             </div>
+            <script>
+                function calculate(){
+                    const distance = parseFloat(document.getElementById('distance').value);
+                    const load = parseFloat(document.getElementById('load').value);
+
+            // Calculate power consumption
+            const power = distance * load;
+
+            // Display the result
+            document.getElementById('power').textContent = power.toFixed(2);
+                }
+            </script>
         </main>
         <footer>
             <!-- place footer here -->
